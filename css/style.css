@@ -1,0 +1,241 @@
+/*=================================================================================
+
+Jordan Mears - 4/9/2014
+
+1. Basics
+2. Typography
+3. Buttons and images
+4. Header
+5. Home
+6. About
+7. Services
+8. Portfolio
+9. Contact
+10. Footer
+
+=================================================================================*/
+
+
+
+/*=================================================================================
+1. Basics
+=================================================================================*/
+*
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+ul { 
+    list-style: none;
+}
+html, body { 
+    width: 100%;
+    height: 100%;
+}
+body { 
+    background: #cccccc;
+	font: 18px 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #fff;
+}
+.wrap {
+    width: 70%;
+    margin: auto;
+}
+
+/*=================================================================================
+2. Typography
+=================================================================================*/
+h1,h2,h3,.button { 
+    color: #fff;
+	font-weight: 100;
+}
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
+
+a,a:visited { 
+    text-decoration: none; color: #2980B9;
+}
+a:hover,a:focus { 
+    color: #87EFBA;
+}
+
+/*=================================================================================
+3. Buttons and images
+=================================================================================*/
+.button {
+    background: #2980B9;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+    
+    -webkit-transition: 1s;
+	-moz-transition: 1s;
+    transition: 1s;
+}
+.button:hover {
+    background: #87EFBA;
+}
+.logo {
+	float: left;
+	width: 50px;
+	height: 50px;
+	color: #87EFBA;
+	line-height: 45px;
+	font-size: 20px;
+	text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-bottom: solid 2px #2980B9;
+    border-radius: 0%;
+    transition: 1s ease;
+    box-sizing: border-box;
+}
+.logo:hover {
+    border-bottom: solid 2px #87EFBA;
+}
+
+/*=================================================================================
+4. Header
+=================================================================================*/
+header {
+    height: 50px;
+    width: 100%;
+    background-color: #313131;
+    position: fixed;
+}
+nav {
+    float: right;
+    font-size: 14px;
+}
+.menu-list li {
+    float: left;
+    margin: 20px 0 0 20px;
+    height: 28px;
+}
+.menu-list li:hover {
+    border-bottom: solid 2px #87EFBA;
+}
+.menu-list li:active {
+    border-bottom: solid 2px #2980B9;
+}
+
+/*=================================================================================
+5. Home
+=================================================================================*/
+#home {
+    height: 100%;
+    background-image: url('../img/space.jpg');
+	background-size: cover;
+}
+#home-content { 
+    padding-top: 300px;
+    text-align: center;
+}
+
+/*=================================================================================
+6. About
+=================================================================================*/
+#about { 
+    height: 800px;
+    background-color: #313131;
+    background-image: url('../img/about_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#about-content {
+    padding-top: 20%;
+}
+
+#about h2 {
+    width: 30%;
+    float: left;
+    padding-top: 0px;
+}
+#about p {
+    width: 70%;
+    float: right;
+}
+
+/*=================================================================================
+7. Services
+=================================================================================*/
+#services {
+    height: 800px;
+    background-color: #87EFBA;
+    background-image: url('../img/services_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #313131;
+}
+#services-content {
+    padding-top: 10%;
+}
+#services img {
+    max-width: 100%;
+}
+#services .feature {
+    width: 40%;
+    float: left;
+}
+#services .feature:first-child {
+    padding-right: 10%;
+}
+#services h3 {
+    color: #313131;
+    text-align: center;
+}
+/*=================================================================================
+8. Portfolio
+=================================================================================*/
+#portfolio {
+    height: 800px;
+    background-image: url('../img/portfolio_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #2980B9;
+}
+#portfolio-content {
+    padding-top: 10%;
+}
+#portfolio h2 {
+    text-align: center;
+}
+#portfolio .feature {
+    width: 300px;
+    margin: 30px;
+    float: left;
+    background-color: #3498DB;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#portfolio img {
+    width: 100%;
+}
+
+/*=================================================================================
+9. Contact
+=================================================================================*/
+#contact {
+    height: 800px;
+    background-color: #313131;
+}
+#contact-content {
+    padding-top: 30%;
+}
+
+/*=================================================================================
+10. Footer
+=================================================================================*/
+footer {
+    background-color: #313131;
+    color: #444;
+}
+
+
+
+
+
