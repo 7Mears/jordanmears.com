@@ -1,74 +1,46 @@
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 900px) {
+/* 1. Basics */
+    #about, #services, #portfolio, #contact { 
+        padding: 200px 0 300px 0;
+    }
+    
+/* 4. Header */
+    header {
+        position: fixed;
+    }
 /* 6. About */
-#about {
-    height: 1200px; 
-}
-
-/* 7. Services */
-#services {
-    height: 1400px; 
-}
-
-/* 8. Portfolio */    
-
-#portfolio {
-    height: 1200px;
-}
-}
-
-@media screen and (min-width: 800px) {
-/* 6. About */
-#about-content {
-    padding-top: 200px;
-}
-#about h2 {
-    width: 30%;
-    float: left;
-    color: #5A5A5A;
-    padding-top: 30px;
-}
-#about p {
-    width: 70%;
-    float: right;
-    color: #D6D6D6;
-}
+    #about h2 {
+        width: 30%;
+        float: left;
+        color: #5A5A5A;
+        padding-top: 30px;
+    }
+    #about p {
+        width: 70%;
+        float: right;
+        color: #D6D6D6;
+    }
     
 /* 7. Services */
-#services {
-    height: 1000px; 
-}
-#services-content {
-    padding-top: 150px;
-}
-    
-#services .feature {
-    width: 45%;
-    float: left;
-}
-#services .feature-first {
-    width: 45%;
-    float: left;
-    padding-right: 10%;
-}
+ 
+    #services .feature {
+        width: 45%;
+        float: left;
+    }
+    #services .feature-first {
+        width: 45%;
+        float: left;
+        padding-right: 10%;
+    }
 
 /* 8. Portfolio */    
-
-#portfolio {
-    height: 1000px;
-}
-#portfolio-content {
-    padding-top: 150px;
-}
-#portfolio .feature {
-    width: 30%;
-    margin-right: 5%;
-    float: left;
-    background-color: #3498DB;
-    display: inline-block;
-    box-sizing: border-box;
-}
-    #portfolio .feature:nth-child(4) {
-        margin-right: 0%;
-}
+    #portfolio .feature {
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+    }
+        #portfolio .feature:nth-child(4) {
+            margin-right: 0%;
+    }
 
 }
