@@ -1,7 +1,7 @@
 /*=================================================================================
 
-Jordan Mears - 4/9/2014
-
+Jordan Mears
+---------------------
 1. Basics
 2. Typography
 3. Buttons and images
@@ -25,7 +25,7 @@ Jordan Mears - 4/9/2014
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
+
 }
 ul { 
     list-style: none;
@@ -36,10 +36,11 @@ html, body {
 }
 body { 
     background: #cccccc;
-	font: 18px 'Roboto', sans-serif;
-	font-weight: 300;
+	font: 16px 'Roboto', sans-serif;
+    font-weight: 300;
 	color: #fff;
 }
+
 .wrap {
     width: 70%;
     margin: auto;
@@ -49,8 +50,9 @@ body {
 2. Typography
 =================================================================================*/
 h1,h2,h3,.button { 
+    font-family: 'Roboto Slab', serif;
     color: #fff;
-	font-weight: 100;
+	font-weight: 300;
 }
 h1 { font-size: 4em; }
 h2 { font-size: 3em; }
@@ -61,6 +63,10 @@ a,a:visited {
 }
 a:hover,a:focus { 
     color: #87EFBA;
+}
+p {
+    line-height: 1.5em;
+    letter-spacing: 1px;
 }
 
 /*=================================================================================
@@ -79,6 +85,20 @@ a:hover,a:focus {
 .button:hover {
     background: #87EFBA;
 }
+.hero-action {
+    color: #FFF;
+    border: 1px solid #2980B9;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+    
+    -webkit-transition: 1s;
+	-moz-transition: 1s;
+    transition: 1s;
+}
+.hero-action:hover {
+    border-color: #87EFBA;
+}
 .logo {
 	float: left;
 	width: 50px;
@@ -86,15 +106,18 @@ a:hover,a:focus {
 	color: #87EFBA;
 	line-height: 45px;
 	font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
 	text-align: center;
     cursor: pointer;
     position: relative;
     border-bottom: solid 2px #2980B9;
-    border-radius: 0%;
+    
     transition: 1s ease;
     box-sizing: border-box;
 }
 .logo:hover {
+    color: #2980B9;
     border-bottom: solid 2px #87EFBA;
 }
 
@@ -110,6 +133,15 @@ header {
 nav {
     float: right;
     font-size: 14px;
+}
+nav a {
+    color: #D6D6D6;
+}
+nav a:hover {
+    color: #D6D6D6;
+}
+nav .active {
+    color: #5A5A5A;
 }
 .menu-list li {
     float: left;
@@ -133,38 +165,42 @@ nav {
 }
 #home-content { 
     padding-top: 300px;
-    text-align: center;
+    
 }
-
+#home-content p {
+    padding-bottom: 50px;
+}
 /*=================================================================================
 6. About
 =================================================================================*/
 #about { 
-    height: 800px;
+    height: 600px;
     background-color: #313131;
     background-image: url('../img/about_bg.png');
     background-repeat: no-repeat;
     background-position: bottom;
 }
 #about-content {
-    padding-top: 20%;
+    padding-top: 200px;
 }
 
 #about h2 {
     width: 30%;
     float: left;
-    padding-top: 0px;
+    color: #5A5A5A;
+    padding-top: 30px;
 }
 #about p {
     width: 70%;
     float: right;
+    color: #D6D6D6;
 }
 
 /*=================================================================================
 7. Services
 =================================================================================*/
 #services {
-    height: 800px;
+    height: 1000px;
     background-color: #87EFBA;
     background-image: url('../img/services_bg.png');
     background-repeat: no-repeat;
@@ -172,37 +208,43 @@ nav {
     color: #313131;
 }
 #services-content {
-    padding-top: 10%;
+    padding-top: 150px;
 }
 #services img {
     max-width: 100%;
 }
 #services .feature {
-    width: 40%;
+    width: 45%;
     float: left;
 }
-#services .feature:first-child {
+#services .feature-first {
+    width: 45%;
+    float: left;
     padding-right: 10%;
 }
 #services h3 {
     color: #313131;
     text-align: center;
+    padding-bottom: 20px;
 }
+
 /*=================================================================================
 8. Portfolio
 =================================================================================*/
 #portfolio {
-    height: 800px;
+    height: 1000px;
     background-image: url('../img/portfolio_bg.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: #2980B9;
 }
 #portfolio-content {
-    padding-top: 10%;
+    padding-top: 150px;
 }
 #portfolio h2 {
     text-align: center;
+    color: #3498DB;
+    margin-bottom: 50px;
 }
 #portfolio .feature {
     width: 300px;
