@@ -42,6 +42,7 @@ body {
 }
 .wrap {
     width: 70%;
+    position: relative;
     margin: auto;
 }
 #about, #services, #portfolio, #contact {
@@ -50,6 +51,9 @@ body {
     padding: 100px 0 200px 0;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+.cf {
+    clear: both;
 }
 
 /*=================================================================================
@@ -127,6 +131,60 @@ p {
     border-bottom: solid 2px #87EFBA;
 }
 
+#cloudsmoving2 {
+    position: absolute;
+    background: url('../img/cloudsmoving.png');
+    height: 150px;
+    width: 2000px;
+    bottom: -320px;
+    left: -170%;
+      -webkit-animation: move-left 100s infinite;
+    -webkit-animation-delay: 50s
+}
+
+#cloudsmoving {
+    position: absolute;
+    background: url('../img/cloudsmoving.png');
+    height: 150px;
+    width: 2000px;
+    bottom: -320px;
+      -webkit-animation: move-left 100s infinite;
+}
+@-webkit-keyframes move-left {
+0%   {left:-170%%;}
+100% {left:100%;}
+}
+
+#leftcloud {
+    position: absolute;
+    background: url('../img/leftcloud.png');
+    height: 200px;
+    width: 350px;
+    left: -30%;
+    bottom: -350px;
+     z-index: 11;
+  -webkit-animation: move-up 7s infinite;
+}
+#rightcloud {
+    position: absolute;
+    background: url('../img/rightcloud.png');
+    height: 200px;
+    width: 350px;
+    right: -25%;
+    bottom: -350px;
+    z-index: 11;
+
+  -webkit-animation: move-up 7s infinite;
+}
+
+@-webkit-keyframes move-up {
+0%   {bottom:-360px;}
+50%   {bottom: -350px;}
+100% {bottom:-360px;}
+}
+
+
+
 /*=================================================================================
 4. Header
 =================================================================================*/
@@ -134,6 +192,7 @@ header {
     height: 50px;
     width: 100%;
     background-color: #313131;
+    z-index: 100;
 }
 nav {
     float: right;
@@ -195,8 +254,9 @@ nav .active {
 =================================================================================*/
 #services {
     background-color: #87EFBA;
-    background-image: url('../img/services_bg.png');
+    background-image: url('../img/cloudsbg.png');
     color: #313131;
+    overflow: hidden;
 }
 #services .feature {
     width: 100%;
@@ -212,7 +272,6 @@ nav .active {
     text-align: center;
     padding-bottom: 20px;
 }
-
 /*=================================================================================
 8. Portfolio
 =================================================================================*/
@@ -248,6 +307,41 @@ nav .active {
 =================================================================================*/
 #contact {
     background-color: #313131;
+    color: #D6D6D6;
+}
+#contact .info {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contact-form {
+    width: 100%;
+}
+input[type="text"] {
+    height: 30px;
+    width: 50%;
+    padding: 2px;
+    margin: 10px 0;
+    border-bottom: 2px dashed #3498DB;
+    background-color:#313131;
+    font: 16px 'Roboto', sans-serif;
+    color: #D6D6D6;
+}
+input[type="text"]:focus {
+    border-bottom: 2px solid #87EFBA;
+}
+textarea {
+    height: 200px;
+    width: 100%;
+    padding: 10px 10px 0 5px;
+    margin: 10px 0;
+    border: 2px dashed #3498DB;
+    background-color:#313131;
+    font: 16px 'Roboto', sans-serif;
+    color: #D6D6D6;
+}
+
+#contact p.success {
+    display: none;
 }
 
 

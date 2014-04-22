@@ -64,7 +64,12 @@
                 <h3>Code</h3>
                 <p>Clean code is key to creating a well-functioning website. As a front end developer, I lay the foundation for websites, create the visual style, and ensure cross-browser and cross-device functionality – all in coding languages. This is the building blocks of your website, and my goal is for the coding to be so well done, you won’t have to worry about it all.</p>
             </div>
-        </div>   
+        </div>
+        
+        <p class="cf"></p>
+        <div id="cloudsmoving"></div><div id="cloudsmoving2"></div>
+        <div id="leftcloud"></div><div id="rightcloud"></div>
+        
     </div>
     </section>
 <!-- Portfolio ================================================================ -->
@@ -97,23 +102,25 @@
         <div id="contact-content">
             <div class="info">
                 <h2>Say hello</h2>
-                <p>Feel free to use the form, give me a call, or send an email.</p>
+                <p>Feel free to use the form,<br /> give me a call,<br /> or send an email.</p>
             </div>
 <!-- form contact -->
-            <div class="cont-send">
-				<p class="success">Your message was sent successfully.</p>
-			</div>		
-			<form method="post" action="contactengine.php" id="form-contact" >
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name"  class="required">
-					<label for="email">Email:</label>
-					<input type="text" id="email" name="email" class="required email">
-                    <label for="Message">Message:</label>
-                    <textarea id="Message" class="Message" name="Message" >     
-                    </textarea>
-				<span class="load-form"></span>					
-				<input type="submit"  class="button" value="SEND" id="submit_contact_form">			
-			</form>		
+            <div class="contact-form">
+                <div class="cont-send">
+                    <p class="success">Your message was sent successfully.</p>
+                </div>		
+                <form method="post" action="contactengine.php" id="form-contact" >
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"  class="required"><br />
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" class="required email"><br />
+                        <label for="Message">Message:</label>
+                        <textarea id="Message" class="Message" name="Message" >    
+                        </textarea><br /> 
+                    <span class="load-form"></span>					
+                    <input type="submit"  class="button" value="SEND" id="submit_contact_form">			
+                </form>		
+            </div>
        </div> 
     </div>
     </section>
