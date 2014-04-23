@@ -36,7 +36,7 @@ html, body {
 }
 body { 
     background: #cccccc;
-	font: 16px 'Roboto', sans-serif;
+	font: 1.2em 'Roboto', sans-serif;
     font-weight: 300;
 	color: #fff;
 }
@@ -48,11 +48,11 @@ body {
 #about, #services, #portfolio, #contact {
     height: auto;
     overflow-y: auto;
-    padding: 100px 0 200px 0;
+    padding: 100px 0 100px 0;
     background-repeat: no-repeat;
     background-position: bottom;
 }
-.cf {
+.clearfix {
     clear: both;
 }
 
@@ -95,7 +95,7 @@ p {
 .button:hover {
     background: #87EFBA;
 }
-.hero-action {
+.hero-button {
     color: #FFF;
     border: 1px solid #2980B9;
 	padding: 10px;
@@ -106,7 +106,7 @@ p {
 	-moz-transition: 1s;
     transition: 1s;
 }
-.hero-action:hover {
+.hero-button:hover {
     border-color: #87EFBA;
 }
 .logo {
@@ -130,61 +130,6 @@ p {
     color: #2980B9;
     border-bottom: solid 2px #87EFBA;
 }
-
-#cloudsmoving2 {
-    position: absolute;
-    background: url('../img/cloudsmoving.png');
-    height: 150px;
-    width: 2000px;
-    bottom: -320px;
-    left: -170%;
-      -webkit-animation: move-left 100s infinite;
-    -webkit-animation-delay: 50s
-}
-
-#cloudsmoving {
-    position: absolute;
-    background: url('../img/cloudsmoving.png');
-    height: 150px;
-    width: 2000px;
-    bottom: -320px;
-      -webkit-animation: move-left 100s infinite;
-}
-@-webkit-keyframes move-left {
-0%   {left:-170%%;}
-100% {left:100%;}
-}
-
-#leftcloud {
-    position: absolute;
-    background: url('../img/leftcloud.png');
-    height: 200px;
-    width: 350px;
-    left: -30%;
-    bottom: -350px;
-     z-index: 11;
-  -webkit-animation: move-up 7s infinite;
-}
-#rightcloud {
-    position: absolute;
-    background: url('../img/rightcloud.png');
-    height: 200px;
-    width: 350px;
-    right: -25%;
-    bottom: -350px;
-    z-index: 11;
-
-  -webkit-animation: move-up 7s infinite;
-}
-
-@-webkit-keyframes move-up {
-0%   {bottom:-360px;}
-50%   {bottom: -350px;}
-100% {bottom:-360px;}
-}
-
-
-
 /*=================================================================================
 4. Header
 =================================================================================*/
@@ -224,10 +169,11 @@ nav .active {
 =================================================================================*/
 #home {
     height: 100%;
-    background-image: url('../img/space.jpg');
+    background: url('../img/space.jpg');
 	background-size: cover;
 }
 #home-content { 
+    text-align: center;
     padding-top: 300px;
     
 }
@@ -241,9 +187,12 @@ nav .active {
     background-color: #313131;
     background-image: url('../img/about_bg.png');
 }
-
+#about-content {
+    padding-top: 50px;
+}
 #about h2 {
     color: #5A5A5A;
+    padding-bottom: 50px;
 }
 #about p {
     color: #D6D6D6;
@@ -253,8 +202,9 @@ nav .active {
 7. Services
 =================================================================================*/
 #services {
-    background-color: #87EFBA;
     background-image: url('../img/cloudsbg.png');
+
+    background-color: #87EFBA;
     color: #313131;
     overflow: hidden;
 }
@@ -272,6 +222,8 @@ nav .active {
     text-align: center;
     padding-bottom: 20px;
 }
+
+
 /*=================================================================================
 8. Portfolio
 =================================================================================*/
@@ -284,9 +236,11 @@ nav .active {
     background-color: #3498DB;
     border-bottom: 2px solid #3498DB;
     margin: 25px 0;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
 }
 #portfolio .feature:hover {
     border-bottom: 2px solid #87EFBA;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.3);
 }
 #portfolio img {
     width: 100%;
@@ -294,7 +248,7 @@ nav .active {
 #portfolio h2 {
     text-align: center;
     color: #3498DB;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 #portfolio h3 {
     text-align: center;
