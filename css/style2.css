@@ -1,0 +1,381 @@
+/*=================================================================================
+
+Jordan Mears
+---------------------
+1. Basics
+2. Typography
+3. Buttons and images
+4. Header
+5. Home
+6. About
+7. Services
+8. Portfolio
+9. Contact
+10. Footer
+=================================================================================*/
+
+/*=================================================================================
+1. Basics
+=================================================================================*/
+*
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ul { 
+    list-style: none;
+}
+html, 
+body { 
+    width: 100%;
+    height: 100%;
+}
+body { 
+    background: #cccccc;
+	font: 1.1em 'Roboto', sans-serif;
+    font-weight: 300;
+	color: #fff;
+}
+.wrap {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+#about, 
+#services, 
+#portfolio, 
+#contact {
+    height: auto;
+    overflow-y: auto;
+    padding: 100px 0 100px 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.clearfix {
+    clear: both;
+}
+@media screen and (min-width: 900px) {
+    #about, #services, #portfolio, #contact {
+    padding: 100px 0 300px 0;
+    }
+}
+/*=================================================================================
+2. Typography
+=================================================================================*/
+h1,
+h2,
+h3,
+.button { 
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+	font-weight: 300;
+}
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
+a,
+a:visited { 
+    text-decoration: none; color: #2980B9;
+}
+a:hover,
+a:focus { 
+    color: #87EFBA;
+}
+p {
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+/*=================================================================================
+3. Buttons and images
+=================================================================================*/
+.button {
+    background: #2980B9;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+    -webkit-transition: 1s;
+	-moz-transition: 1s;
+    transition: 1s;
+}
+.button:hover {
+    background: #87EFBA;
+}
+.hero-button {
+    color: #FFF;
+    border: 1px solid #2980B9;
+	padding: 5px 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+	cursor: pointer;
+	text-align: center;
+    -webkit-transition: 1s;
+	-moz-transition: 1s;
+    transition: 1s;
+}
+.hero-button:hover {
+    border-color: #87EFBA;
+}
+.hero-contact-button {
+    background-color: #2980B9;
+}
+.hero-contact-button:hover {
+    background-color: #87EFBA;
+}
+.logo {
+	float: left;
+	width: 50px;
+	height: 40px;
+	color: #87EFBA;
+	line-height: 45px;
+	font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+	text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-bottom: solid 2px #2980B9;
+    
+    transition: 1s ease;
+    box-sizing: border-box;
+}
+.logo:hover {
+    color: #2980B9;
+    border-bottom: solid 2px #87EFBA;
+}
+/*=================================================================================
+4. Header and=
+=================================================================================*/
+header {
+    height: 40px;
+    width: 100%;
+    background-color: #313131;
+    z-index: 100;
+    position: fixed;
+}
+nav {
+    float: right;
+    font-size: 14px;
+}
+nav a {
+    color: #D6D6D6;
+}
+nav a:hover {
+    color: #D6D6D6;
+}
+nav .active {
+    color: #5A5A5A;
+}
+.menu-list li {
+    float: left;
+    margin: 19px 0 0 20px;
+}
+.menu-list li:hover {
+    border-bottom: solid 2px #87EFBA;
+}
+.menu-list li:active {
+    border-bottom: solid 2px #2980B9;
+}
+.currSection { 
+    border-bottom: solid 2px #2980B9;
+}
+@media screen and (min-width: 900px) {
+    header {
+        position: fixed;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav ul > li {
+        width: 100%;
+        height: 100px;
+    }
+    nav  {
+        width: 100%;
+        background: #313131;
+    }
+}
+/*=================================================================================
+5. Home
+=================================================================================*/
+#home {
+    height: 100%;
+    background: url('../img/saskatoon.jpg');
+	background-size: cover;
+}
+#home-content { 
+    text-align: center;
+    padding-top: 250px;
+}
+#home-content p {
+    padding: 20px;
+}
+/*=================================================================================
+6. About
+=================================================================================*/
+#about { 
+    background-color: #313131;
+    background-image: url('../img/about_bg.png');
+}
+#about-content {
+    padding-top: 50px;
+}
+#about h2 {
+    color: #5A5A5A;
+    padding-bottom: 50px;
+}
+#about p {
+    color: #D6D6D6;
+}
+@media screen and (min-width: 900px) {
+    #about {
+        background-size: contain;
+        
+    }
+    #about h2 {
+        width: 30%;
+        float: left;
+        color: #5A5A5A;
+        padding-top: 30px;
+    }
+    #about p {
+        width: 70%;
+        float: right;
+        color: #D6D6D6;
+    }
+}
+/*=================================================================================
+7. Services
+=================================================================================*/
+#services {
+    background-image: url('../img/clouds-bg.png');
+    background-color: #87EFBA;
+    color: #313131;
+}
+#services .feature {
+    width: 100%;
+}
+
+#services img {
+    max-width: 100%;
+}
+
+#services h3 {
+    color: #313131;
+    text-align: center;
+    padding-bottom: 20px;
+}
+@media screen and (min-width: 900px) {
+    #services {
+        background-size: contain;
+    }
+    #services .feature {
+        width: 45%;
+        float: left;
+    }
+    #services .feature-first {
+        width: 45%;
+        float: left;
+        padding-right: 10%;
+    }
+}
+/*=================================================================================
+8. Portfolio
+=================================================================================*/
+#portfolio {
+    background-image: url('../img/portfolio_bg.png');
+    background-color: #2980B9;
+}
+#portfolio .feature {
+    width: 100%;
+    background-color: #3498DB;
+    border-bottom: 2px solid #3498DB;
+    margin: 25px 0;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
+}
+#portfolio .feature:hover {
+    border-bottom: 2px solid #87EFBA;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.3);
+}
+#portfolio img {
+    width: 100%;
+}
+#portfolio h2 {
+    text-align: center;
+    color: #3498DB;
+    padding-bottom: 50px;
+}
+#portfolio h3 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+@media screen and (min-width: 900px) {  
+    #portfolio .feature {
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+    }
+        #portfolio .feature:nth-child(4) {
+            margin-right: 0%;
+    }
+}
+/*=================================================================================
+9. Contact
+=================================================================================*/
+#contact {
+    background-color: #313131;
+    color: #D6D6D6;
+}
+#contact .info {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contact-form {
+    width: 100%;
+}
+input[type="text"] {
+    height: 30px;
+    width: 50%;
+    padding: 2px;
+    margin: 10px 0;
+    border-bottom: 2px dashed #3498DB;
+    background-color:#313131;
+    font: 16px 'Roboto', sans-serif;
+    color: #D6D6D6;
+}
+input[type="text"]:focus {
+    border-bottom: 2px solid #87EFBA;
+}
+textarea {
+    height: 200px;
+    width: 100%;
+    padding: 10px 10px 0 5px;
+    margin: 10px 0;
+    border: 2px dashed #3498DB;
+    background-color:#313131;
+    font: 16px 'Roboto', sans-serif;
+    color: #D6D6D6;
+}
+
+#contact p.success {
+    display: none;
+}
+@media screen and (min-width: 900px) {  
+    #contact .info {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+    }
+    .contact-form {
+        float: right;
+        width: 65%;
+    }
+}
+
+/*=================================================================================
+10. Footer
+=================================================================================*/
+footer {
+    background-color: #313131;
+    color: #444;
+}
