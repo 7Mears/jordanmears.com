@@ -1,9 +1,3 @@
-/* Colors
-primary:
-secondary:
-backgroundLight:
-backgroundDark:
-*/
 /* Basics */
 *
 	{
@@ -20,30 +14,40 @@ body {
     height: 100%;
 }
 body { 
-    background: #cccccc;
-	font: 1.1em 'Roboto', sans-serif;
+    background: #1A1F2B;
+	font: 1.2em 'Roboto', sans-serif;
     font-weight: 300;
-	color: #fff;
+	color: #D0E4F2;
+}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+#aboutContent,
+#servicesContent,
+#portfolioContent,
+#contactContent {
+    padding: 200px 0;
 }
 /* Typography */
 h1,
 h2,
 h3 { 
     font-family: 'Roboto Slab', serif;
-    color: tomato;
+    color: #FFDA66;
 	font-weight: 300;
 }
 h1 { font-size: 4em; }
 h2 { font-size: 3em; }
-h3 { font-size: 2em; }
+h3 { font-size: 1.5em; }
 a,
 a:visited { 
     text-decoration: none; 
-    color: #2980B9;
+    color: #FFDA66;
 }
 a:hover,
 a:focus { 
-    color: #87EFBA;
+    color: #1FCECB;
 }
 p {
     line-height: 1.5em;
@@ -51,26 +55,67 @@ p {
 }
 /* Buttons */
 .button {
-    background: #2980B9;
-    color: #fff;
+    background: #1FCECB;
     border-bottom: 3px solid rgba(0,0,0,0.3);
     border-radius: 5px;
-	padding: 15px 30px;
+	padding: 10px 30px;
 	cursor: pointer;
-	text-align: center;
 }
-/* Nav */
-
+.button:hover {
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+}
+/* Header */
+nav {
+    background: rgba(0,0,0,0.3);
+    float: right;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+nav li {
+    float: left;
+    padding: 15px;
+}
+#logo {
+    background: rgba(0,0,0,0.3);
+    color: #1FCECB;
+    padding: 15px;
+    float: left;
+    margin-top: 10px;
+    border-radius: 5px;
+}
 /* Home */
-
+#home {
+    height: 100%;
+    background-image: url(/img/saskatoon.jpg);
+}
+#homeContent {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* This is for the vertical align */
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+#homeContent > h3 {
+    margin-bottom: 50px;
+}
 /* About */
 
 /* Services */
-
+#services {
+    background: #30395C;
+}
 /* Portfolio */
+#portfolio {
+    background: #4A6491;
+}
 .portfolioCard img {
     height: 300px;
 }
 /* Contact */
-
-/* Footer */
+#contact {
+    background: #85A5CC;
+}
