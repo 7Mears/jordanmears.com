@@ -49,45 +49,6 @@
         float: left;
         padding-right: 10%;
     }
-    #leftcloud {
-        position: absolute;
-        background: url('../img/leftcloud.png');
-        height: 200px;
-        width: 350px;
-        left: -30%;
-         z-index: 11;
-      -webkit-animation: move-up 7s infinite;
-    }
-    #rightcloud {
-        position: absolute;
-        background: url('../img/rightcloud.png');
-        height: 200px;
-        width: 350px;
-        right: -28%;
-        z-index: 11;
-
-      -webkit-animation: move-up 7s infinite;
-    }
-
-    @-webkit-keyframes move-up {
-    0%   {bottom:-390px;}
-    50%   {bottom: -370px;}
-    100% {bottom:-390px;}
-    }
-    
-    #cloudsmoving {
-    position: absolute;
-    background: url('../img/cloudsmoving.png');
-    height: 150px;
-    width: 2000px;
-    bottom: -320px;
-    -webkit-animation: move-left 60s infinite;
-}
-@-webkit-keyframes move-left {
-    0%   {left:-200%%;}
-    100% {left:100%;}
-}
-    
     /* 8. Portfolio */    
     #portfolio .feature {
         width: 30%;
