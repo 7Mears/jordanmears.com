@@ -128,8 +128,21 @@ nav li {
 #portfolio {
     background: #4A6491;
 }
+.portfolioCard {
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.portfolioCard h3 {
+    text-align: center;
+    padding: 10px 0;
+}
 .portfolioCard img {
-    height: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 /* Contact */
 #contact {
