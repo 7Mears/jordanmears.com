@@ -108,6 +108,22 @@ nav li {
 #services {
     background: #30395C;
 }
+.servicesCard {
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    width: 40%;
+    margin: 4.89%;
+    padding: 5%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.servicesCard img {
+    width: 100%;
+}
+.servicesCard h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
 /* Portfolio */
 #portfolio {
     background: #4A6491;
