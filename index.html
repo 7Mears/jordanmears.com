@@ -15,10 +15,8 @@
 <!-- Header  -->
     <header>    
         <div class="wrap">      
-            <div id="logo">JM</div>
                 <nav>
                     <ul>
-                        <li><a href="#home" class="navSelected">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -32,9 +30,8 @@
         <div class="wrap">
             <div id="homeContent">
                 <h1>Jordan Mears</h1>
-                <h3>Freelance web developer based in Saskatoon, Saskatchewan</h3>
-                <a href="#portfolio" class="button">Portfolio</a>
-                <a href="#contact" class="button">Contact</a>
+                <h3>Web developer based in Saskatoon, Saskatchewan</h3>
+                <a href="#contact" class="button">Need a website?</a>
             </div>
         </div>
     </section>
@@ -51,15 +48,16 @@
     <section id="services">
         <div class="wrap"> 
             <div id="servicesContent">
+                <h2>Services</h2>
                 <!-- Card 1 -->
                 <div class="servicesCard">
-                    <img src="img/design.png">
+                    <img src="img/design.svg" class="svg">
                     <h3>Web Design</h3>
                     <p>Crafting the user’s experience is the most important aspect of web design. Websites exist to deliver information, and in my work as a user interface designer, it’s my job to ensure that task is done well. I create simple and efficient web experiences so that your client can find what they need, and leave your site with a pleasant impression of your business.</p>
             </div>
                 <!-- Card 2 -->
                 <div class="servicesCard">
-                    <img src="img/code.png">
+                    <img src="img/code.svg" class="svg">
                     <h3>Code</h3>
                     <p>Clean code is key to creating a well-functioning website. As a front end developer, I lay the foundation for websites, create the visual style, and ensure cross-browser and cross-device functionality – all in coding languages. This is the building blocks of your website, and my goal is for the coding to be so well done, you won’t have to worry about it all.</p>
                 </div>
@@ -70,21 +68,28 @@
     <section id="portfolio">
         <div class="wrap">
             <div id="portfolioContent">
+                <h2>Clients</h2>
                 <!-- Card 1 -->
                 <div class="portfolioCard">
-                    <img src="img/greydon.jpg">
-                    <h3>GreydonSquare</h3>
+                    <div class="portfolioImage">
+                        <img src="img/greydon.jpg">
+                    </div>
+                    <p>Greydon Square<br />Musician</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="portfolioCard">
-                    <img src="img/ashleigh.jpg">
-                    <h3>Ashleigh Mattern</h3>
+                    <div class="portfolioImage">
+                        <img src="img/ashleigh.jpg">
+                    </div>
+                    <p>Ashleigh Mattern<br />Writer</p>
                 </div>          
                 <!-- Card 3 -->
                 <div class="portfolioCard">
-                    <img src="img/ashleigh.jpg">
-                    <h3>Another site</h3>
-                </div>   
+                    <div class="portfolioImage">
+                        <img src="img/greydon.jpg">
+                    </div>
+                    <p>Grand Unified Theory<br />Creative Collective</p>
+                </div> 
             </div>
         </div>
     </section>
@@ -92,10 +97,35 @@
     <section id="contact">
         <div class="wrap"> 
             <div id="contactContent">
-                <div class="info">
-                    <h2>Say hello</h2>
-                    <p>Feel free to use the form, give me a call, or send an email.</p>
-                </div>
+                <h2>Contact</h2>
+            <div id="contactInfo">
+                <h3>A few ways<br /> to reach me:</h3>
+                <ul>
+                    <li>T: 306-241-6474</li>
+                    <li>E: 7mears@gmail.com</li>
+                    <li>Google+</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <!-- Contact Form  -->
+            <div class="form-contact">		
+                <form method="post" action="contactengine.php" id="form-contact" >
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name"  class="required">
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="Email" class="required email">
+
+                    <label for="Message">Message:</label>
+                    <textarea id="Message" class="Message" name="Message" ></textarea>
+
+                    <span class="load-form"></span>					
+                    <input type="submit"  class="button" value="Send Message" id="submit_contact_form">			
+                </form>		
+            </div>
+            <!-- End Contact Form  -->
            </div> 
         </div>
     </section>

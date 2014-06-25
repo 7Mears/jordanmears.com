@@ -1,4 +1,4 @@
-/* Basics */
+/* Basics & Globals */
 *
 	{
 	margin: 0;
@@ -20,7 +20,7 @@ body {
 	color: #D0E4F2;
 }
 .wrap {
-    width: 1200px;
+    width: 960px;
     margin: 0 auto;
 }
 #aboutContent,
@@ -38,32 +38,46 @@ h3 {
 	font-weight: 300;
 }
 h1 { font-size: 4em; }
-h2 { font-size: 3em; }
+h2 { 
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 50px;
+}
 h3 { font-size: 1.5em; }
 a,
 a:visited { 
     text-decoration: none; 
     color: #FFDA66;
 }
-a:hover,
-a:focus { 
+a:hover { 
     color: #1FCECB;
 }
 p {
     line-height: 1.5em;
     letter-spacing: 1px;
 }
+/* Images */
+.svg {
+    fill: #FFDA66;
+    width: 100%;
+}
 /* Buttons */
 .button {
-    background: #1FCECB;
-    border-bottom: 3px solid rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.3);
+    border-bottom: 3px solid #1FCECB;
     border-radius: 5px;
 	padding: 10px 30px;
 	cursor: pointer;
 }
 .button:hover {
-    border-bottom: 3px solid rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
+    color: #1FCECB;
+    border-bottom: 3px solid #1FCECB;
 }
+.button:active {
+    border: 1px;
+}
+
 /* Header */
 nav {
     background: rgba(0,0,0,0.3);
@@ -86,10 +100,11 @@ nav li {
 /* Home */
 #home {
     height: 100%;
-    background-image: url(/img/saskatoon.jpg);
+    background-image: url(../img/saskatoon1.jpg);
 }
 #homeContent {
     width: 1200px;
+    text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -103,19 +118,27 @@ nav li {
     margin-bottom: 50px;
 }
 /* About */
-
+#aboutContent p {
+    text-indent: 2em;
+}
 /* Services */
 #services {
     background: #30395C;
+    background-image: url(../img/saskatoon2.jpg);
+    background-size: cover;
 }
 .servicesCard {
-    background: rgba(0,0,0,0.3);
+    background: #30395C;
     border-radius: 5px;
-    width: 40%;
-    margin: 4.89%;
-    padding: 5%;
+    width: 41%;
+    margin: 4%;
+    padding: 4%;
     display: inline-block;
     box-sizing: border-box;
+    transition: ease 1s;
+}
+.servicesCard:hover {
+    box-shadow: 5px 10px 50px -10px #1A1F2B;
 }
 .servicesCard img {
     width: 100%;
@@ -124,27 +147,124 @@ nav li {
     text-align: center;
     margin-bottom: 25px;
 }
+
+@media only screen and (max-width: 950px) {
+    .servicesCard {
+        width: 90%;
+    }
+}
 /* Portfolio */
 #portfolio {
+    display: hidden;
     background: #4A6491;
 }
 .portfolioCard {
-    background: rgba(0,0,0,0.3);
+    background: #30395C;
+    border-bottom: 3px solid #1FCECB;
     border-radius: 5px;
     width: 30%;
     margin: 1%;
     display: inline-block;
     box-sizing: border-box;
 }
-.portfolioCard h3 {
+.portfolioCard:hover {
+    background: #1A1F2B;
+    color: #FFDA66;
+    border-bottom: 3px solid #1FCECB;
+}
+.portfolioCard p {
     text-align: center;
     padding: 10px 0;
 }
+
 .portfolioCard img {
     width: 100%;
     border-radius: 5px 5px 0 0;
 }
+.portfolioImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.portfolioImage:after {
+    content: "";
+    background: rgba(48,57,92,0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    top: 0;
+    left: 0;
+}
+.portfolioImage:hover:after {
+    background: rgba(31,206,203,0);
+}
+.portfolioImage img {
+    width: 100%;
+    vertical-align: top;
+}
+@media only screen and (max-width: 950px) {
+    .portfolioCard {
+        width: 90%;
+    }
+}
 /* Contact */
 #contact {
-    background: #85A5CC;
+    background: #1A1F2B;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100px;
+}
+#contactInfo {
+    float: left;
+    width: 30%;
+}
+
+/* Form */
+
+.form-contact {
+    float: right;
+    width: 60%;
+}
+#contact .button {
+    color: #FFF;
+    font: 1em 'Roboto', sans-serif;
+}
+
+input[type="text"],input[type="password"],input[type="email"],textarea,select {
+	border: 1px solid #1A1F2B;
+	padding: 10px;
+	outline: none;
+	font: 1em 'Roboto', sans-serif;
+	color: #fff;
+	display: block;
+	background:  #30395C;
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus,textarea:focus {
+	border: 1px solid #1FCECB;
+	pad color: #444;
+}
+textarea {
+	min-height: 150px;
+    width: 100%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 950px) {
+    .wrap {
+        width: 90%;
+    }
+    .form-contact {
+        width: 90%;
+    }
+    textarea {
+        width: 80%;
+    }
+    #contactInfo {
+        width: 90%;
+        text-align: center;
+    }
 }
