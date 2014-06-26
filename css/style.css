@@ -155,7 +155,7 @@ nav li {
 }
 /* Portfolio */
 #portfolio {
-    display: hidden;
+    display: none;
     background: #4A6491;
 }
 .portfolioCard {

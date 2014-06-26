@@ -17,10 +17,10 @@
         <div class="wrap">      
                 <nav>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="http://www.jordanmears.com/#about">About</a></li>
+                        <li><a href="http://www.jordanmears.com/#services">Services</a></li>
+                        <!-- <li><a href="http://www.jordanmears.com/#portfolio">Portfolio</a></li> -->
+                        <li><a href="http://www.jordanmears.com/#contact">Contact</a></li>
                     </ul>
                 </nav>
         </div>
@@ -30,7 +30,7 @@
         <div class="wrap">
             <div id="homeContent">
                 <h3>Your message has been sent!</h3>
-                <a href="#contact" class="button">Go back</a>
+                <a href="http://www.jordanmears.com" class="button">Go back</a>
             </div>
         </div>
     </section>
