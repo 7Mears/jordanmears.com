@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- CSS  -->
 <link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="css/animate.css">
 <!-- Font  -->
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Roboto:100,200,300' rel='stylesheet' type='text/css'>
 </head>
@@ -15,7 +16,7 @@
 <!-- Header  -->
     <header>    
         <div class="wrap">      
-                <nav>
+                <nav class="wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
@@ -28,10 +29,10 @@
 <!--Home  -->
     <section id="home">
         <div class="wrap">
-            <div id="homeContent">
+            <div id="homeContent" class="wow fadeIn" data-wow-duration="2s">
                 <h1>Jordan Mears</h1>
                 <h3>Web developer based in Saskatoon, Saskatchewan</h3>
-                <a href="#contact" class="button">Need a website?</a>
+                <a href="#contact" class="button wow fadeInUp" data-wow-duration="3s" data-wow-delay="1s">Need a website?</a>
             </div>
         </div>
     </section>
@@ -106,6 +107,7 @@
                         <li>Google+</li>
                         <li>Facebook</li>
                         <li>Twitter</li>
+                        <li>Github</li>
                     </ul>
                 </div>
                 <!-- Contact Form  -->
@@ -132,6 +134,10 @@
 <!-- JS  -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
     
 </body>
 </html>
