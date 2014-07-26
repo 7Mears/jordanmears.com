@@ -15,14 +15,18 @@
 <body>  
 <!-- Header  -->
     <header>         
-        <nav>
-            <ul>
-                <li><a href="#aboutContent">About</a></li>
-                <li><a href="#servicesContent">Services</a></li>
-                <li><a href="#portfolioContent">Portfolio</a></li>
-                <li><a href="#contactContent">Contact</a></li>
-            </ul>
-        </nav>
+ 	<div id="cd-nav">
+            <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+            <nav id="cd-main-nav">
+                <ul>
+                    <li><a href="#aboutContent">About</a></li>
+                    <li><a href="#servicesContent">Services</a></li>
+                    <li><a href="#portfolioContent">Portfolio</a></li>
+                    <li><a href="#contactContent">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 <!--Home  -->
     <section id="home">
@@ -47,11 +51,11 @@
     <section id="services">
         <div class="wrap"> 
             <div id="servicesContent">
-                <h2>Services</h2>
+                <h2>What I do</h2>
                 <!-- Card 1 -->
                 <div class="servicesCard">
                     <img src="img/design.svg" class="svg">
-                    <h3>Web Design</h3>
+                    <h3>Design</h3>
                     <p>Crafting the user’s experience is the most important aspect of web design. Websites exist to deliver information, and in my work as a user interface designer, it’s my job to ensure that task is done well. I create simple and efficient web experiences so that your client can find what they need, and leave your site with a pleasant impression of your business.</p>
             </div>
                 <!-- Card 2 -->
@@ -93,43 +97,38 @@
                         </figcaption>			
                     </figure>
             </div>
-	   </div>		
-     </section>
+	   </div>
+    </section>
 <!-- Contact  -->
     <section id="contact">
         <div class="wrap"> 
             <div id="contactContent">
-                <h2>Contact me</h2>
-                <div id="contactInfo">
-                    <ul>
-                        <li><a href="tel:1-306-241-6474">Phone</a>: 306-241-6474</li>
-                        <li><a href="mailto:7mears@gmail.com" target="_blank">Email</a>: 7mears@gmail.com</li>
-                        <li><a href="https://www.facebook.com/jordan.s.mears" target="_blank">Facebook</a></li>
-                        <li><a href="https://plus.google.com/+JordanMears7/posts" target="_blank">Google+</a></li>
-                        <li><a href="https://github.com/7Mears" target="_blank">GitHub</a></li>
-                    </ul>
+                <h2>Contact</h2>
+                <p>Feel free to get in touch regarding anything web design.</p>
+                <div class="contactCard">
+                    <h3>E-mail</h3>
+                    <p>jm@jordanmears.com</p>
                 </div>
-                <!-- Contact Form  -->
-                <div class="form-contact">		
-                    <form method="post" action="contactengine.php" id="form-contact" >
-
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name"  class="required">
-
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="Email" class="required email">
-
-                        <label for="Message">Message:</label>
-                        <textarea id="Message" class="Message" name="Message" ></textarea>
-
-                        <span class="load-form"></span>					
-                        <input type="submit"  class="button" value="Send Message" id="submit_contact_form">			
-                    </form>		
+                <div class="contactCard">
+                    <h3>Phone</h3>
+                    <p>306-241-6474</p>
                 </div>
-            <!-- End Contact Form  -->
+                <div class="contactCard">
+                    <h3>Social Networks</h3>
+                    <a href="https://www.facebook.com/jordan.s.mears"><img src="img/facebook.svg" class="svg icon"></a>
+                    <a href="https://twitter.com/7mears"><img src="img/twitter.svg" class="svg icon"></a>
+                    <a href="https://plus.google.com/+JordanMears7/posts"><img src="img/google.svg" class="svg icon"></a>
+                </div>
            </div> 
         </div>
     </section>
+<!-- Footer -->
+    <footer>
+        <div class="wrap">
+            <p>Back to the <a href="#home">top</a>.</p>
+            <p>Thanks for visiting!</p>
+        </div>
+    </footer>
 <!-- JS  -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
